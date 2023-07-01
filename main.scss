@@ -1,14 +1,12 @@
-// $main-color: #521751; //Variable Declaration in Sass For 1 Value 
-
+// $main-color: #521751; //Variable Declaration in Sass For 1 Value Known as Variable
 
 $colors: (
   main: #521751,
   secondary: #fa923f,
-);//If More than 1 property of specified element we can use map 
+); //If More than 1 property of specified element we can use map
 
 $border-default: 0.05rem solid map-get($colors, main); //More then 1 Value declaration is Known as List
-
-
+$size-default: 1rem;
 @import "typography.css";
 html {
   font-size: 94.75%;
@@ -30,30 +28,32 @@ body {
     wrap: nowrap;
   }
   align-items: center;
-  padding: 3rem 0;
+  padding: $size-default * 3 0;
   box-sizing: border-box;
 }
 
 .sass-introduction {
   border: $border-default;
-  background: #fae5ff;
-  padding: 2rem;
+  background: lighten(map-get($colors, main), 72%);
+  padding: $size-default * 2;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
 }
 
-.sass-introduction p {
-  margin: 0;
+.sass-introduction {
+  p {
+    margin: 0;
+  }
 }
 
 .sass-details {
   border: $border-default;
-  background: #fae5ff;
-  padding: 1rem;
+  background: lighten(map-get($colors, main), 72%);
+  padding: $size-default * 1;
   text-align: center;
-  margin: 2rem 0;
+  margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
 }
@@ -62,19 +62,23 @@ body {
   border-bottom: $border-default;
 }
 
-.section-header h1 {
-  margin: 0 0 1rem 0;
+.section-header {
+  h1 {
+    margin: 0 0 $size-default * 1 0;
+  }
 }
 
 .documentation-links {
   list-style: none;
-  margin: 1rem 0 0 0;
+  margin: $size-default * 1 0 0 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  flex: {
+    direction: column;
+  }
   // Nested Selector
   li {
     margin: 0.2rem 0;
@@ -83,7 +87,7 @@ body {
   // Nested Selector
   .documentation-link {
     text-decoration: none;
-    color:map-get($colors, main);
+    color: map-get($colors, main);
     display: block;
     padding: 0.2rem;
     border: 0.05rem solid map-get($colors, main);
