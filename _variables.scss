@@ -5,3 +5,4 @@ $colors: (
 ); //If More than 1 property of specified element we can use map
 $border-default: 0.05rem solid map-get($colors, main); //More then 1 Value declaration is Known as List
 $size-default: 1rem;
+
