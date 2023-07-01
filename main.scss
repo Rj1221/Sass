@@ -93,12 +93,11 @@ body {
     display: block;
     padding: 0.2rem;
     border: 0.05rem solid map-get($colors, main);
-  }
-  // Nested Selector
-  .documentation-link:hover,
-  .documentation-link:active {
-    color: white;
-    background: map-get($colors, secondary);
-    border-color: map-get($colors, secondary);
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($colors, secondary);
+      border-color: map-get($colors, secondary);
+    }
   }
 }
