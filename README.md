@@ -5,11 +5,11 @@ Sass
 # Description 
 Description of the repository goes here.
 
-## Table of Contents
-
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
+- [Documentation](#documentation)
+- [Modular SCSS Architecture](#modular-scss-architecture)
+- [Best Practices](#best-practices)
 - [Contributing](#contributing)
 - [License](#license)
 
