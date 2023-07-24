@@ -1,7 +1,8 @@
 # Sass
 This is the Sass Repository Where All The Basics of Sass is Covered
 # Repository Name
-
+Sass
+# Description 
 Description of the repository goes here.
 
 ## Table of Contents
@@ -158,6 +159,26 @@ $theme: "dark";
   color: white;
 }
 ```
+### Multiple Value Declaration and using  map-get()
+// Define a map with multiple values
+$theme-colors: (
+  primary: #007bff,
+  secondary: #dc3545,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+// Retrieve values from the map using the map-get() function
+body {
+  color: map-get($theme-colors, primary);
+  background-color: map-get($theme-colors, secondary);
+}
+
+.button {
+  background-color: map-get($theme-colors, danger);
+  border: 1px solid map-get($theme-colors, warning);
+}
 
 ## 3. Mixins
 
