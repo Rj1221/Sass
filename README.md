@@ -57,39 +57,162 @@ Explain how to use the SCSS code provided in this repository. Include any releva
 
 ## Table of Contents
 
-1. Introduction
-2. Variables
-   2.1. Basic Variables
-   2.2. Variable Scope
-   2.3. Default Variables
-   2.4. Variable Interpolation
-3. Mixins
-   3.1. Basic Mixins
-   3.2. Parameterized Mixins
-   3.3. Mixin with Default Parameters
-   3.4. Mixin with Variable Arguments
-   3.5. Mixin Guards
-4. Inheritance
-   4.1. Extending Selectors
-   4.2. Placeholder Selectors
-   4.3. Multiple Inheritance
-5. Functions
-   5.1. Built-in Functions
-   5.2. Custom Functions
-6. Control Directives
-   6.1. @if
-   6.2. @for
-   6.3. @each
-   6.4. @while
-7. Modular SCSS Architecture
-   7.1. Folder Structure
-   7.2. Importing Partial Files
-   7.3. Managing Dependencies
-8. Best Practices
-   8.1. Code Organization
-   8.2. Naming Conventions
-   8.3. Performance Optimization
-9. Conclusion
+# Advanced SCSS Developer Documentation
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Variables](#variables)
+   2.1. [Basic Variables](#basic-variables)
+   2.2. [Variable Scope](#variable-scope)
+   2.3. [Default Variables](#default-variables)
+   2.4. [Variable Interpolation](#variable-interpolation)
+3. [Mixins](#mixins)
+   3.1. [Basic Mixins](#basic-mixins)
+   3.2. [Parameterized Mixins](#parameterized-mixins)
+   3.3. [Mixin with Default Parameters](#mixin-with-default-parameters)
+   3.4. [Mixin with Variable Arguments](#mixin-with-variable-arguments)
+   3.5. [Mixin Guards](#mixin-guards)
+4. [Inheritance](#inheritance)
+   4.1. [Extending Selectors](#extending-selectors)
+   4.2. [Placeholder Selectors](#placeholder-selectors)
+   4.3. [Multiple Inheritance](#multiple-inheritance)
+5. [Functions](#functions)
+   5.1. [Built-in Functions](#built-in-functions)
+   5.2. [Custom Functions](#custom-functions)
+6. [Control Directives](#control-directives)
+   6.1. [@if](#if)
+   6.2. [@for](#for)
+   6.3. [@each](#each)
+   6.4. [@while](#while)
+7. [Modular SCSS Architecture](#modular-scss-architecture)
+   7.1. [Folder Structure](#folder-structure)
+   7.2. [Importing Partial Files](#importing-partial-files)
+   7.3. [Managing Dependencies](#managing-dependencies)
+8. [Best Practices](#best-practices)
+   8.1. [Code Organization](#code-organization)
+   8.2. [Naming Conventions](#naming-conventions)
+   8.3. [Performance Optimization](#performance-optimization)
+9. [Conclusion](#conclusion)
+
+## 1. Introduction
+
+Welcome to the Advanced SCSS Developer Documentation! This guide aims to help you become proficient in writing scalable, maintainable, and efficient SCSS code. SCSS (Sassy CSS) is an extension of CSS that introduces powerful features such as variables, mixins, inheritance, and more.
+
+## 2. Variables
+
+### 2.1. Basic Variables
+
+In SCSS, you can use variables to store and reuse values throughout your code. Variables are denoted by the '$' symbol followed by the variable name.
+
+### 2.2. Variable Scope
+
+Variables in SCSS have two scopes: global and local.
+
+### 2.3. Default Variables
+
+You can assign default values to variables using the !default flag.
+
+### 2.4. Variable Interpolation
+
+Variable interpolation allows you to use variables within selectors or property names by wrapping them with #{}.
+
+## 3. Mixins
+
+### 3.1. Basic Mixins
+
+Mixins are reusable blocks of code that can be included in multiple selectors.
+
+### 3.2. Parameterized Mixins
+
+Mixins can take parameters, making them more flexible.
+
+### 3.3. Mixin with Default Parameters
+
+You can assign default values to mixin parameters using the !default flag.
+
+### 3.4. Mixin with Variable Arguments
+
+Sometimes you might need to pass a variable number of arguments to a mixin.
+
+### 3.5. Mixin Guards
+
+Mixin guards allow you to conditionally apply a mixin based on a certain condition.
+
+## 4. Inheritance
+
+### 4.1. Extending Selectors
+
+Inheritance allows you to share styles between selectors using the @extend directive.
+
+### 4.2. Placeholder Selectors
+
+Placeholder selectors are similar to mixins but only generate CSS when extended using @extend.
+
+### 4.3. Multiple Inheritance
+
+You can extend multiple selectors or placeholder selectors using a comma-separated list.
+
+## 5. Functions
+
+### 5.1. Built-in Functions
+
+SCSS provides a set of built-in functions to perform various tasks.
+
+### 5.2. Custom Functions
+
+You can create custom functions using the @function directive.
+
+## 6. Control Directives
+
+### 6.1. @if
+
+The @if directive allows you to apply styles conditionally based on a given expression.
+
+### 6.2. @for
+
+The @for directive iterates over a range of values and generates styles accordingly.
+
+### 6.3. @each
+
+The @each directive iterates over a list or a map and generates styles for each item.
+
+### 6.4. @while
+
+The @while directive allows you to apply styles in a loop while a certain condition is true.
+
+## 7. Modular SCSS Architecture
+
+### 7.1. Folder Structure
+
+A good SCSS project follows a modular architecture. Here's a sample folder structure:
+
+### 7.2. Importing Partial Files
+
+Use @import directive to import partial SCSS files into your main SCSS file.
+
+### 7.3. Managing Dependencies
+
+It's essential to manage the order of importing partial files to avoid conflicts.
+
+## 8. Best Practices
+
+### 8.1. Code Organization
+
+Organize your code into smaller, reusable components.
+
+### 8.2. Naming Conventions
+
+Use meaningful names for variables, mixins, and classes.
+
+### 8.3. Performance Optimization
+
+Minimize the use of nested selectors and avoid unnecessary mixin calls.
+
+## 9. Conclusion
+
+Congratulations! You've learned the fundamentals of advanced SCSS development. By leveraging variables, mixins, inheritance, and functions, you can write modular, maintainable, and efficient SCSS code. Always follow best practices and keep your code organized for better collaboration and scalability. Happy coding!
+
 
 ## 1. Introduction
 
@@ -160,7 +283,7 @@ $theme: "dark";
 }
 ```
 ### Multiple Value Declaration and using  map-get()
-```
+```scss
 // Define a map with multiple values
 $theme-colors: (
   primary: #007bff,
