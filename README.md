@@ -55,8 +55,6 @@ Explain how to use the SCSS code provided in this repository. Include any releva
 ## Documentation
 # Advanced SCSS Developer Documentation
 
-# Advanced SCSS Developer Documentation
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
