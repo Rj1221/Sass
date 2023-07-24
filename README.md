@@ -160,6 +160,7 @@ $theme: "dark";
 }
 ```
 ### Multiple Value Declaration and using  map-get()
+```
 // Define a map with multiple values
 $theme-colors: (
   primary: #007bff,
@@ -179,6 +180,7 @@ body {
   background-color: map-get($theme-colors, danger);
   border: 1px solid map-get($theme-colors, warning);
 }
+```
 
 ## 3. Mixins
 
