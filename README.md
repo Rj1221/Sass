@@ -614,6 +614,4 @@ If you want to contribute to this project or have found any issues, follow the g
 
 ## License
 
-Mention the license under which this repository is published. For example:
-
 This project is licensed under the [MIT License](LICENSE).
