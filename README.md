@@ -1,6 +1,6 @@
 # Sass
 This is the Scss Repository Where All The Basics of Sass is Covered
-![Scss Logo](https://caffeinecreations.ca/uploads/blog/_800x418_crop_center-center_82_none/sass-logo-new.png?mtime=1560450047)
+<img src="https://caffeinecreations.ca/uploads/blog/_800x418_crop_center-center_82_none/sass-logo-new.png?mtime=1560450047" alt="Sass Image" width="550px"/>
 # Repository Name
 Sass
 # Description 
