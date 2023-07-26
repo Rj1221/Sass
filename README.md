@@ -440,6 +440,4 @@ If you want to contribute to this project or have found any issues, follow the g
 6. Open a Pull Request, and provide a detailed explanation of the changes made.
 
 ## License
-This project is licensed under the MIT License.
-
-Please let me know if you need further assistance or if there's anything else I can help you with!
+This project is licensed under the [MIT License](LICENSE).
